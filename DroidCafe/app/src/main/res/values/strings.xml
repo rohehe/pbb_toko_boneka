@@ -1,0 +1,43 @@
+<!--
+  ~ Copyright (C) 2018 Google Inc.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+    <string name="app_name">ROHHE</string>
+    <string name="action_settings">Settings</string>
+    <string name="intro_text">Droid Desserts</string>
+    <string name="beruang">beruang adalah boneka yang mmmmm.</string>
+    <string name="doraemon">Karakter Doraemon yang bulat dan lucu bisa menjadi pilihan pertama untuk dihadiahkan pada orang terkasih Anda.</string>
+    <string name="lumba">Boneka satu ini sangat lucu dengan warna yang menggemaskan. Ukurannya cukup besar, mencapai 100 cm, dengan bahan raspur yang sangat halus dan jahitan yang rapi.</string>
+    <string name="beruang_order">Boneka Beruang Rp.100.000</string>
+    <string name="doraemon_order">Boneka Doraemon Rp.200.000</string>
+    <string name="lumba_order">Boneka Lumba Lumba Rp.300.000</string>
+    <string name="change_dessert">Change dessert</string>
+    <string name="masukan_nama">masukan nama anda</string>
+    <string name="masukan_nomorhp">masukan nomor hp anda</string>
+    <string name="masukan_alamat">masukan alamat anda</string>
+    <string name="pilih_warna_boneka">Pilih Warna Boneka</string>
+    <string name="merah">merah</string>
+    <string name="kuning">kuning</string>
+    <string name="hijau">hijau</string>
+    <string name="biru">biru</string>
+    <string name="pilih_boneka">Pilih Boneka</string>
+    <string name="pilih_beruang">Beruang</string>
+    <string name="pilih_doraemon">Doraemon</string>
+    <string name="pilih_lumba">Lumba-Lumba</string>
+    <string name="droid_doll">droid doll</string>
+    <string name="droid_doll_rohe">DROID DOLL ROHE</string>
+    <string name="booking_doll">booking_doll</string>
+</resources>

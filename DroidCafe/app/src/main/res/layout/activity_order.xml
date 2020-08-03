@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2018 Google Inc.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.droidcafe.OrderActivity">
+
+    <TextView
+        android:id="@+id/order_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="8dp"
+        android:text=" "
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="24dp"
+        android:text=" "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/order_textview"/>
+
+    <EditText
+        android:id="@+id/name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="@string/masukan_nama"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/name_label"
+        app:layout_constraintStart_toEndOf="@+id/name_label"/>
+
+    <TextView
+        android:id="@+id/nomorhp_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text=" "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_label"/>
+
+    <EditText
+        android:id="@+id/nomorhp_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/masukan_nomorhp"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/nomorhp_label"
+        app:layout_constraintStart_toEndOf="@+id/nomorhp_label" />
+
+    <TextView
+        android:id="@+id/alamat_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text=" "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nomorhp_label"/>
+
+
+    <EditText
+        android:id="@+id/alamat_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/masukan_alamat"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/alamat_label"
+        app:layout_constraintStart_toEndOf="@+id/alamat_label" />
+
+
+
+    <TextView
+        android:id="@+id/delivery_label2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/pilih_boneka"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alamat_text" />
+
+    <RadioGroup
+        android:id="@+id/opsi2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/delivery_label2">
+
+        <RadioButton
+            android:id="@+id/beruang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pilih_beruang" />
+
+        <RadioButton
+            android:id="@+id/doraemon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pilih_doraemon" />
+
+        <RadioButton
+            android:id="@+id/lumbalumba"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pilih_lumba" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/delivery_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/pilih_warna_boneka"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/opsi2" />
+
+    <RadioGroup
+        android:id="@+id/opsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/delivery_label">
+
+        <RadioButton
+            android:id="@+id/merahh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/merah" />
+
+        <RadioButton
+            android:id="@+id/kuningg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kuning" />
+
+        <RadioButton
+            android:id="@+id/hijauu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hijau" />
+
+        <RadioButton
+            android:id="@+id/biruu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/biru" />
+
+    </RadioGroup>
+
+
+
+    <Button
+        android:id="@+id/pes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:text="PESAN"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/opsi"/>
+
+
+
+</android.support.constraint.ConstraintLayout>
